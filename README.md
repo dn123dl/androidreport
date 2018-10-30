@@ -89,9 +89,9 @@ ex)
 ##### 1. 설정과 초기화
 ```
 1)전역 사용자명/이메일 구성하기
-git config - -global user.name “Your name”
+git config --global user.name “Your name”
 
-git config - -global user.email “Your email address”
+git config --global user.email “Your email address”
 
 2)저장소별 사용자명/이메일 구성하기 (해당 저장소 디렉터리로 이동후)
 git config user.name “Your name”
@@ -99,13 +99,13 @@ git config user.name “Your name”
 git config user.email “Your email address”
 
 3)전역 설정 정보 조회
-git config - -global - -list
+git config --global --list
 
 4)저장소별 설정 정보 조회
-git config - -list
+git config --list
 
 5)Git의 출력결과 색상 활성화하기
-git config - -global color.ui “auto”
+git config --global color.ui “auto”
 
 6)새로운 저장소 초기화하기
 mkdir /path/newDir
@@ -122,7 +122,7 @@ git remote add <원격 저장소> <저장소 url>
 ```
 ##### 2. 기본적인 사용법
 ```
-아래 명령어에서 [ ]는 선택적인 매개변수를 의미한다.
+[]는 선택적 매캐변수를 의미
 
 1)새로운 파일을 추가하거나 존재하는 파일 스테이징하고 커밋하기
 git add <파일>
@@ -190,7 +190,7 @@ git checkout -M <기존 브랜치> <새로운 브랜치>
 git merge <브랜치>
 
 11)커밋하지 않고 합치기
-git merge - -no-commit <브랜치>
+git merge --no-commit <브랜치>
 
 12)선택하여 합치기
 git cherry-pick <커밋명>
@@ -199,7 +199,7 @@ git cherry-pick <커밋명>
 git cherry-pick -n <커밋명>
 
 14)브랜치의 이력을 다른 브랜치에 합치기
-git merge - -squash <브랜치>
+git merge --squash <브랜치>
 
 15)브랜치 삭제하기
 git branch -d <삭제할 브랜치>
@@ -222,10 +222,10 @@ git log -1
 git log -20 -p
 
 5)6개월 동안의 커밋 로그 보기
-git log - -since=”6 hours”
+git log --since=”6 hours”
 
 6)이틀 전까지의 커밋 로그 보기
-git log - -before=”2 days”
+git log --before=”2 days”
 
 7)HEAD보다 세 개 이전의 커밋 로그 보기
 git log -1 HEAD-3
@@ -239,19 +239,19 @@ git log <시작 지점>…<끝 지점>
 
 
 9)각 항목의 로그 이력 한 줄씩 보기
-git log - -pretty=oneline
+git log --pretty=oneline
 
 10)각 항목마다 영향 받은 줄의 통계 보기
-git log - -stat
+git log --stat
 
 11)커밋할 시점의 파일 상태 보기
-git log - -name-status
+git log --name-status
 
 12)현재 작업 트리와 인덱스의 차이점 보기
 git diff
 
 13)인덱스와 저장소의 차이점 보기
-git diff - -cached
+git diff --cached
 
 14)작업 트리와 저장소의 차이점 보기
 git diff HEAD
@@ -263,9 +263,6 @@ git diff <시작 지점>
 
 16)저장소의 두 지점 사이의 차이점 보기
 git diff <시작 지점> <끝 지점>
-
-17)로그에서 복사와 붙여 넣은 정보 보기
-git log -C -C -p -1 <특정 지점>
 ```
 ##### 5. 원격 저장소
 ```
