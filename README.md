@@ -1,6 +1,6 @@
 # Android Prodraming Report
 
-* 마크다운 문법 정리
+## * 마크다운 문법 정리
 
 1. 문단 제목
 ```
@@ -54,8 +54,9 @@ ex)
 ```
 [네이버](https://naver.com)
 
-7.그림넣기
+7.코드펜스
 ```
-[이미지](https://naver.com)
+마크다운 문법을 화면에 적용시키고싶지 않을때 사용
+ex)
 ```
-![깃허브](https://cdn.namu.wiki/r/http%3A%2F%2Fi.imgur.com%2F2megHz2.png)
+
