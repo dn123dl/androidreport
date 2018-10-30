@@ -55,5 +55,7 @@ ex)
 [네이버](https://naver.com)
 
 7.그림넣기
-
-![깃허브](https://search.naver.com/search.naver?where=image&sm=tab_jum&query=%EA%B9%83%ED%97%88%EB%B8%8C#)
+```
+[이미지](https://naver.com)
+```
+![깃허브](https://cdn.namu.wiki/r/http%3A%2F%2Fi.imgur.com%2F2megHz2.png)
